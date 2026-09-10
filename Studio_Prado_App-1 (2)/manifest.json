@@ -1,0 +1,10 @@
+{
+  "name":"Studio Prado — Lava Rápido e Estética Automotiva",
+  "short_name":"Studio Prado",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#05070c",
+  "theme_color":"#05070c",
+  "description":"Serviços, galeria e agendamento da Studio Prado.",
+  "icons":[{"src":"assets/logo.jpg","sizes":"512x512","type":"image/jpeg"}]
+}
