@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#05070c">
+<meta name="description" content="Studio Prado — Lava Rápido e Estética Automotiva. Serviços, preços, galeria e agendamento.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="stylesheet" href="styles.css">
+<title>Studio Prado | Estética Automotiva</title>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><img src="assets/logo.jpg" alt="Studio Prado"></a>
+  <button class="menu" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#inicio" onclick="closeMenu()">Início</a>
+    <a href="#servicos" onclick="closeMenu()">Serviços</a>
+    <a href="#galeria" onclick="closeMenu()">Galeria</a>
+    <a href="#agendamento" onclick="closeMenu()">Agendamento</a>
+    <a href="#contato" onclick="closeMenu()">Contato</a>
+  </nav>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">LAVA RÁPIDO • ESTÉTICA AUTOMOTIVA</span>
+    <h1>Seu carro merece<br><span>esse cuidado.</span></h1>
+    <p>Serviços profissionais para limpeza, renovação e proteção do seu veículo.</p>
+    <div class="actions">
+      <a class="btn primary" href="#agendamento">Agendar agora</a>
+      <a class="btn ghost" href="#servicos">Ver serviços</a>
+    </div>
+    <div class="quick">
+      <span>✓ Atendimento com hora marcada</span>
+      <span>✓ Pix • Cartão • Dinheiro</span>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div><strong>11</strong><span>serviços</span></div>
+  <div><strong>🚗</strong><span>Carros</span></div>
+  <div><strong>🏍️</strong><span>Motos</span></div>
+  <div><strong>✨</strong><span>Acabamento</span></div>
+</section>
+
+<section id="servicos" class="section">
+  <div class="section-head">
+    <span class="eyebrow">O QUE FAZEMOS</span>
+    <h2>Serviços para deixar seu veículo impecável</h2>
+    <p>Escolha o serviço e toque em “Agendar” para enviar seu pedido pelo WhatsApp.</p>
+  </div>
+  <div id="serviceGrid" class="grid"></div>
+</section>
+
+<section id="galeria" class="section dark">
+  <div class="section-head">
+    <span class="eyebrow">NOSSO TRABALHO</span>
+    <h2>Resultados que falam por si</h2>
+    <p>Alguns dos veículos atendidos pela Studio Prado.</p>
+  </div>
+  <div class="gallery">
+    <img src="assets/trabalho-1.jpg" alt="Veículo atendido pela Studio Prado" loading="lazy">
+    <img src="assets/trabalho-2.jpg" alt="Detalhe de interior automotivo" loading="lazy">
+    <img src="assets/trabalho-3.jpg" alt="Lavagem automotiva com espuma" loading="lazy">
+    <img src="assets/trabalho-4.jpg" alt="Veículo vermelho após atendimento" loading="lazy">
+    <img src="assets/trabalho-5.jpg" alt="Interior de veículo" loading="lazy">
+    <img src="assets/trabalho-6.jpg" alt="Veículo vermelho finalizado" loading="lazy">
+    <img src="assets/trabalho-7.jpg" alt="Moto atendida pela Studio Prado" loading="lazy">
+    <img src="assets/trabalho-8.jpg" alt="Veículo branco finalizado" loading="lazy">
+  </div>
+</section>
+
+<section id="agendamento" class="section booking">
+  <div class="booking-card">
+    <div>
+      <span class="eyebrow">AGENDAMENTO</span>
+      <h2>Reserve seu atendimento</h2>
+      <p>Preencha os dados e o WhatsApp abrirá uma mensagem pronta para a Studio Prado.</p>
+      <div class="hours">
+        <h3>Horários</h3>
+        <p><b>Segunda a sábado:</b> 13:30 às 18:00</p>
+        <p><b>Domingo:</b> 08:00 às 14:00</p>
+      </div>
+    </div>
+    <form id="bookingForm">
+      <label>Seu nome<input id="nome" required placeholder="Nome completo"></label>
+      <label>Veículo<input id="veiculo" required placeholder="Ex.: Onix 2020"></label>
+      <label>Serviço<select id="servico" required></select></label>
+      <label>Data<input id="data" type="date" required></label>
+      <label>Horário<select id="horario" required></select></label>
+      <label>Observação<textarea id="obs" rows="3" placeholder="Alguma informação importante?"></textarea></label>
+      <button class="btn primary full" type="submit">Enviar agendamento no WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="instagram">
+  <div>
+    <span class="eyebrow">SIGA A STUDIO PRADO</span>
+    <h2>@studioprado_rs</h2>
+    <p>Acompanhe nossos trabalhos, novidades e promoções.</p>
+  </div>
+  <a class="btn primary" target="_blank" rel="noopener" href="https://instagram.com/studioprado_rs">Abrir Instagram</a>
+</section>
+
+<section id="contato" class="section contact">
+  <div class="section-head">
+    <span class="eyebrow">FALE CONOSCO</span>
+    <h2>Studio Prado</h2>
+  </div>
+  <div class="contact-grid">
+    <a class="contact-card" href="https://wa.me/5554996339326" target="_blank" rel="noopener"><span>📲</span><b>WhatsApp</b><small>(54) 99633-9326</small></a>
+    <div class="contact-card"><span>📍</span><b>Endereço</b><small>Rua Honorato Novello, 150<br>Bairro Presidente Vargas</small></div>
+    <div class="contact-card"><span>🕒</span><b>Atendimento</b><small>Seg–Sáb: 13:30–18:00<br>Dom: 08:00–14:00</small></div>
+    <div class="contact-card"><span>💳</span><b>Pagamento</b><small>Pix • Cartão • Dinheiro</small></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <img src="assets/logo.jpg" alt="Studio Prado">
+  <p>© <span id="year"></span> Studio Prado — Lava Rápido e Estética Automotiva.</p>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
